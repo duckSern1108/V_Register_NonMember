@@ -102,6 +102,7 @@ struct V_Register_NonMember: View {
                     }
                     
                     Button {
+                        hideKeyboard()
                         Task {
                             do {
                                 try await viewModel.submitForm()
@@ -122,7 +123,7 @@ struct V_Register_NonMember: View {
                     .background(Color.SECONDARY_COLOR)
                     .cornerRadius(8)
                 }
-                .padding(.horizontal, 16)
+                .padding([.horizontal, .bottom], 16)
             }
             .sheet(isPresented: $showBottomSheetSuccess, content: {
                 Text("Send form success")

@@ -42,6 +42,7 @@
 		84ACC39E2B45A3DB009325BC /* AdobeClean-Cond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC38A2B45A3DB009325BC /* AdobeClean-Cond.ttf */; };
 		84ACC3A22B45AA09009325BC /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACC3A12B45AA09009325BC /* CheckBox.swift */; };
 		84ACC3A42B45ABFD009325BC /* FormSelectField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACC3A32B45ABFD009325BC /* FormSelectField.swift */; };
+		84ACC3A62B45B302009325BC /* View+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACC3A52B45B302009325BC /* View+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		84ACC39F2B45A414009325BC /* Register-form-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Register-form-Info.plist"; sourceTree = SOURCE_ROOT; };
 		84ACC3A12B45AA09009325BC /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		84ACC3A32B45ABFD009325BC /* FormSelectField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormSelectField.swift; sourceTree = "<group>"; };
+		84ACC3A52B45B302009325BC /* View+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				84ACC3702B459DDF009325BC /* Color+Ext.swift */,
+				84ACC3A52B45B302009325BC /* View+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				84ACC3A42B45ABFD009325BC /* FormSelectField.swift in Sources */,
 				84ACC33E2B458E1B009325BC /* ContentView.swift in Sources */,
 				84ACC33C2B458E1B009325BC /* Register_formApp.swift in Sources */,
+				84ACC3A62B45B302009325BC /* View+Ext.swift in Sources */,
 				84ACC36E2B4593D7009325BC /* RegisterFormModel.swift in Sources */,
 				84ACC3692B458E95009325BC /* FormTextField.swift in Sources */,
 				84ACC3732B45A187009325BC /* V_Register_NonMemberHeaderView.swift in Sources */,
