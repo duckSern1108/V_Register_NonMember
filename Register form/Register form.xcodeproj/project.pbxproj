@@ -1,0 +1,759 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84ACC33C2B458E1B009325BC /* Register_formApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACC33B2B458E1B009325BC /* Register_formApp.swift */; };
+		84ACC33E2B458E1B009325BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACC33D2B458E1B009325BC /* ContentView.swift */; };
+		84ACC3402B458E1C009325BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC33F2B458E1C009325BC /* Assets.xcassets */; };
+		84ACC3432B458E1C009325BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC3422B458E1C009325BC /* Preview Assets.xcassets */; };
+		84ACC34D2B458E1C009325BC /* Register_formTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACC34C2B458E1C009325BC /* Register_formTests.swift */; };
+		84ACC3572B458E1C009325BC /* Register_formUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACC3562B458E1C009325BC /* Register_formUITests.swift */; };
+		84ACC3592B458E1C009325BC /* Register_formUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACC3582B458E1C009325BC /* Register_formUITestsLaunchTests.swift */; };
+		84ACC3672B458E5D009325BC /* V_Register_NonMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACC3662B458E5D009325BC /* V_Register_NonMember.swift */; };
+		84ACC3692B458E95009325BC /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACC3682B458E95009325BC /* FormTextField.swift */; };
+		84ACC36B2B45905A009325BC /* V_Register_NonMemberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACC36A2B45905A009325BC /* V_Register_NonMemberViewModel.swift */; };
+		84ACC36E2B4593D7009325BC /* RegisterFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACC36D2B4593D7009325BC /* RegisterFormModel.swift */; };
+		84ACC3712B459DDF009325BC /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACC3702B459DDF009325BC /* Color+Ext.swift */; };
+		84ACC3732B45A187009325BC /* V_Register_NonMemberHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACC3722B45A187009325BC /* V_Register_NonMemberHeaderView.swift */; };
+		84ACC38B2B45A3DB009325BC /* AdobeClean-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC3772B45A3DB009325BC /* AdobeClean-Black.ttf */; };
+		84ACC38C2B45A3DB009325BC /* AdobeClean-BoldCond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC3782B45A3DB009325BC /* AdobeClean-BoldCond.ttf */; };
+		84ACC38D2B45A3DB009325BC /* AdobeClean-BoldSemiCnIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC3792B45A3DB009325BC /* AdobeClean-BoldSemiCnIt.ttf */; };
+		84ACC38E2B45A3DB009325BC /* AdobeClean-SemiCnIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC37A2B45A3DB009325BC /* AdobeClean-SemiCnIt.ttf */; };
+		84ACC38F2B45A3DB009325BC /* AdobeClean-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC37B2B45A3DB009325BC /* AdobeClean-ExtraBold.ttf */; };
+		84ACC3902B45A3DB009325BC /* AdobeClean-CondIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC37C2B45A3DB009325BC /* AdobeClean-CondIt.ttf */; };
+		84ACC3912B45A3DB009325BC /* AdobeClean-SemiCn.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC37D2B45A3DB009325BC /* AdobeClean-SemiCn.ttf */; };
+		84ACC3922B45A3DB009325BC /* AdobeClean-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC37E2B45A3DB009325BC /* AdobeClean-Bold.ttf */; };
+		84ACC3932B45A3DB009325BC /* AdobeClean-BoldIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC37F2B45A3DB009325BC /* AdobeClean-BoldIt.ttf */; };
+		84ACC3942B45A3DB009325BC /* AdobeClean-SemiLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC3802B45A3DB009325BC /* AdobeClean-SemiLight.ttf */; };
+		84ACC3952B45A3DB009325BC /* AdobeClean-LightIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC3812B45A3DB009325BC /* AdobeClean-LightIt.ttf */; };
+		84ACC3962B45A3DB009325BC /* AdobeClean-SemiLightIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC3822B45A3DB009325BC /* AdobeClean-SemiLightIt.ttf */; };
+		84ACC3972B45A3DB009325BC /* AdobeClean-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC3832B45A3DB009325BC /* AdobeClean-Light.ttf */; };
+		84ACC3982B45A3DB009325BC /* AdobeClean-ExtraBoldIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC3842B45A3DB009325BC /* AdobeClean-ExtraBoldIt.ttf */; };
+		84ACC3992B45A3DB009325BC /* AdobeClean-It.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC3852B45A3DB009325BC /* AdobeClean-It.ttf */; };
+		84ACC39A2B45A3DB009325BC /* AdobeClean-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC3862B45A3DB009325BC /* AdobeClean-Regular.ttf */; };
+		84ACC39B2B45A3DB009325BC /* AdobeClean-BoldCondIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC3872B45A3DB009325BC /* AdobeClean-BoldCondIt.ttf */; };
+		84ACC39C2B45A3DB009325BC /* AdobeClean-BlackIt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC3882B45A3DB009325BC /* AdobeClean-BlackIt.ttf */; };
+		84ACC39D2B45A3DB009325BC /* AdobeClean-BoldSemiCn.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC3892B45A3DB009325BC /* AdobeClean-BoldSemiCn.ttf */; };
+		84ACC39E2B45A3DB009325BC /* AdobeClean-Cond.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84ACC38A2B45A3DB009325BC /* AdobeClean-Cond.ttf */; };
+		84ACC3A22B45AA09009325BC /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACC3A12B45AA09009325BC /* CheckBox.swift */; };
+		84ACC3A42B45ABFD009325BC /* FormSelectField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACC3A32B45ABFD009325BC /* FormSelectField.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84ACC3492B458E1C009325BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84ACC3302B458E1B009325BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84ACC3372B458E1B009325BC;
+			remoteInfo = "Register form";
+		};
+		84ACC3532B458E1C009325BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84ACC3302B458E1B009325BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84ACC3372B458E1B009325BC;
+			remoteInfo = "Register form";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84ACC3382B458E1B009325BC /* Register form.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Register form.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84ACC33B2B458E1B009325BC /* Register_formApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register_formApp.swift; sourceTree = "<group>"; };
+		84ACC33D2B458E1B009325BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		84ACC33F2B458E1C009325BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84ACC3422B458E1C009325BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84ACC3482B458E1C009325BC /* Register formTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Register formTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84ACC34C2B458E1C009325BC /* Register_formTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register_formTests.swift; sourceTree = "<group>"; };
+		84ACC3522B458E1C009325BC /* Register formUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Register formUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84ACC3562B458E1C009325BC /* Register_formUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register_formUITests.swift; sourceTree = "<group>"; };
+		84ACC3582B458E1C009325BC /* Register_formUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register_formUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		84ACC3662B458E5D009325BC /* V_Register_NonMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V_Register_NonMember.swift; sourceTree = "<group>"; };
+		84ACC3682B458E95009325BC /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
+		84ACC36A2B45905A009325BC /* V_Register_NonMemberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V_Register_NonMemberViewModel.swift; sourceTree = "<group>"; };
+		84ACC36D2B4593D7009325BC /* RegisterFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFormModel.swift; sourceTree = "<group>"; };
+		84ACC3702B459DDF009325BC /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
+		84ACC3722B45A187009325BC /* V_Register_NonMemberHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = V_Register_NonMemberHeaderView.swift; sourceTree = "<group>"; };
+		84ACC3772B45A3DB009325BC /* AdobeClean-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-Black.ttf"; sourceTree = "<group>"; };
+		84ACC3782B45A3DB009325BC /* AdobeClean-BoldCond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-BoldCond.ttf"; sourceTree = "<group>"; };
+		84ACC3792B45A3DB009325BC /* AdobeClean-BoldSemiCnIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-BoldSemiCnIt.ttf"; sourceTree = "<group>"; };
+		84ACC37A2B45A3DB009325BC /* AdobeClean-SemiCnIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-SemiCnIt.ttf"; sourceTree = "<group>"; };
+		84ACC37B2B45A3DB009325BC /* AdobeClean-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-ExtraBold.ttf"; sourceTree = "<group>"; };
+		84ACC37C2B45A3DB009325BC /* AdobeClean-CondIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-CondIt.ttf"; sourceTree = "<group>"; };
+		84ACC37D2B45A3DB009325BC /* AdobeClean-SemiCn.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-SemiCn.ttf"; sourceTree = "<group>"; };
+		84ACC37E2B45A3DB009325BC /* AdobeClean-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-Bold.ttf"; sourceTree = "<group>"; };
+		84ACC37F2B45A3DB009325BC /* AdobeClean-BoldIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-BoldIt.ttf"; sourceTree = "<group>"; };
+		84ACC3802B45A3DB009325BC /* AdobeClean-SemiLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-SemiLight.ttf"; sourceTree = "<group>"; };
+		84ACC3812B45A3DB009325BC /* AdobeClean-LightIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-LightIt.ttf"; sourceTree = "<group>"; };
+		84ACC3822B45A3DB009325BC /* AdobeClean-SemiLightIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-SemiLightIt.ttf"; sourceTree = "<group>"; };
+		84ACC3832B45A3DB009325BC /* AdobeClean-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-Light.ttf"; sourceTree = "<group>"; };
+		84ACC3842B45A3DB009325BC /* AdobeClean-ExtraBoldIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-ExtraBoldIt.ttf"; sourceTree = "<group>"; };
+		84ACC3852B45A3DB009325BC /* AdobeClean-It.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-It.ttf"; sourceTree = "<group>"; };
+		84ACC3862B45A3DB009325BC /* AdobeClean-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-Regular.ttf"; sourceTree = "<group>"; };
+		84ACC3872B45A3DB009325BC /* AdobeClean-BoldCondIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-BoldCondIt.ttf"; sourceTree = "<group>"; };
+		84ACC3882B45A3DB009325BC /* AdobeClean-BlackIt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-BlackIt.ttf"; sourceTree = "<group>"; };
+		84ACC3892B45A3DB009325BC /* AdobeClean-BoldSemiCn.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-BoldSemiCn.ttf"; sourceTree = "<group>"; };
+		84ACC38A2B45A3DB009325BC /* AdobeClean-Cond.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AdobeClean-Cond.ttf"; sourceTree = "<group>"; };
+		84ACC39F2B45A414009325BC /* Register-form-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Register-form-Info.plist"; sourceTree = SOURCE_ROOT; };
+		84ACC3A12B45AA09009325BC /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
+		84ACC3A32B45ABFD009325BC /* FormSelectField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormSelectField.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84ACC3352B458E1B009325BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84ACC3452B458E1C009325BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84ACC34F2B458E1C009325BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84ACC32F2B458E1B009325BC = {
+			isa = PBXGroup;
+			children = (
+				84ACC33A2B458E1B009325BC /* Register form */,
+				84ACC34B2B458E1C009325BC /* Register formTests */,
+				84ACC3552B458E1C009325BC /* Register formUITests */,
+				84ACC3392B458E1B009325BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84ACC3392B458E1B009325BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84ACC3382B458E1B009325BC /* Register form.app */,
+				84ACC3482B458E1C009325BC /* Register formTests.xctest */,
+				84ACC3522B458E1C009325BC /* Register formUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84ACC33A2B458E1B009325BC /* Register form */ = {
+			isa = PBXGroup;
+			children = (
+				84ACC3A02B45A9FF009325BC /* Base */,
+				84ACC39F2B45A414009325BC /* Register-form-Info.plist */,
+				84ACC3742B45A3BF009325BC /* Resource */,
+				84ACC36F2B459DD8009325BC /* Extension */,
+				84ACC36C2B4593C8009325BC /* Model */,
+				84ACC3652B458E50009325BC /* Register */,
+				84ACC33B2B458E1B009325BC /* Register_formApp.swift */,
+				84ACC33D2B458E1B009325BC /* ContentView.swift */,
+				84ACC33F2B458E1C009325BC /* Assets.xcassets */,
+				84ACC3412B458E1C009325BC /* Preview Content */,
+			);
+			path = "Register form";
+			sourceTree = "<group>";
+		};
+		84ACC3412B458E1C009325BC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				84ACC3422B458E1C009325BC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84ACC34B2B458E1C009325BC /* Register formTests */ = {
+			isa = PBXGroup;
+			children = (
+				84ACC34C2B458E1C009325BC /* Register_formTests.swift */,
+			);
+			path = "Register formTests";
+			sourceTree = "<group>";
+		};
+		84ACC3552B458E1C009325BC /* Register formUITests */ = {
+			isa = PBXGroup;
+			children = (
+				84ACC3562B458E1C009325BC /* Register_formUITests.swift */,
+				84ACC3582B458E1C009325BC /* Register_formUITestsLaunchTests.swift */,
+			);
+			path = "Register formUITests";
+			sourceTree = "<group>";
+		};
+		84ACC3652B458E50009325BC /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				84ACC3662B458E5D009325BC /* V_Register_NonMember.swift */,
+				84ACC36A2B45905A009325BC /* V_Register_NonMemberViewModel.swift */,
+				84ACC3722B45A187009325BC /* V_Register_NonMemberHeaderView.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		84ACC36C2B4593C8009325BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84ACC36D2B4593D7009325BC /* RegisterFormModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84ACC36F2B459DD8009325BC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				84ACC3702B459DDF009325BC /* Color+Ext.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		84ACC3742B45A3BF009325BC /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				84ACC3752B45A3C9009325BC /* Fonts */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		84ACC3752B45A3C9009325BC /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				84ACC3762B45A3DB009325BC /* AdobeClean */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		84ACC3762B45A3DB009325BC /* AdobeClean */ = {
+			isa = PBXGroup;
+			children = (
+				84ACC3772B45A3DB009325BC /* AdobeClean-Black.ttf */,
+				84ACC3782B45A3DB009325BC /* AdobeClean-BoldCond.ttf */,
+				84ACC3792B45A3DB009325BC /* AdobeClean-BoldSemiCnIt.ttf */,
+				84ACC37A2B45A3DB009325BC /* AdobeClean-SemiCnIt.ttf */,
+				84ACC37B2B45A3DB009325BC /* AdobeClean-ExtraBold.ttf */,
+				84ACC37C2B45A3DB009325BC /* AdobeClean-CondIt.ttf */,
+				84ACC37D2B45A3DB009325BC /* AdobeClean-SemiCn.ttf */,
+				84ACC37E2B45A3DB009325BC /* AdobeClean-Bold.ttf */,
+				84ACC37F2B45A3DB009325BC /* AdobeClean-BoldIt.ttf */,
+				84ACC3802B45A3DB009325BC /* AdobeClean-SemiLight.ttf */,
+				84ACC3812B45A3DB009325BC /* AdobeClean-LightIt.ttf */,
+				84ACC3822B45A3DB009325BC /* AdobeClean-SemiLightIt.ttf */,
+				84ACC3832B45A3DB009325BC /* AdobeClean-Light.ttf */,
+				84ACC3842B45A3DB009325BC /* AdobeClean-ExtraBoldIt.ttf */,
+				84ACC3852B45A3DB009325BC /* AdobeClean-It.ttf */,
+				84ACC3862B45A3DB009325BC /* AdobeClean-Regular.ttf */,
+				84ACC3872B45A3DB009325BC /* AdobeClean-BoldCondIt.ttf */,
+				84ACC3882B45A3DB009325BC /* AdobeClean-BlackIt.ttf */,
+				84ACC3892B45A3DB009325BC /* AdobeClean-BoldSemiCn.ttf */,
+				84ACC38A2B45A3DB009325BC /* AdobeClean-Cond.ttf */,
+			);
+			path = AdobeClean;
+			sourceTree = "<group>";
+		};
+		84ACC3A02B45A9FF009325BC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				84ACC3A12B45AA09009325BC /* CheckBox.swift */,
+				84ACC3682B458E95009325BC /* FormTextField.swift */,
+				84ACC3A32B45ABFD009325BC /* FormSelectField.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84ACC3372B458E1B009325BC /* Register form */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84ACC35C2B458E1C009325BC /* Build configuration list for PBXNativeTarget "Register form" */;
+			buildPhases = (
+				84ACC3342B458E1B009325BC /* Sources */,
+				84ACC3352B458E1B009325BC /* Frameworks */,
+				84ACC3362B458E1B009325BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Register form";
+			productName = "Register form";
+			productReference = 84ACC3382B458E1B009325BC /* Register form.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84ACC3472B458E1C009325BC /* Register formTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84ACC35F2B458E1C009325BC /* Build configuration list for PBXNativeTarget "Register formTests" */;
+			buildPhases = (
+				84ACC3442B458E1C009325BC /* Sources */,
+				84ACC3452B458E1C009325BC /* Frameworks */,
+				84ACC3462B458E1C009325BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84ACC34A2B458E1C009325BC /* PBXTargetDependency */,
+			);
+			name = "Register formTests";
+			productName = "Register formTests";
+			productReference = 84ACC3482B458E1C009325BC /* Register formTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		84ACC3512B458E1C009325BC /* Register formUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84ACC3622B458E1C009325BC /* Build configuration list for PBXNativeTarget "Register formUITests" */;
+			buildPhases = (
+				84ACC34E2B458E1C009325BC /* Sources */,
+				84ACC34F2B458E1C009325BC /* Frameworks */,
+				84ACC3502B458E1C009325BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84ACC3542B458E1C009325BC /* PBXTargetDependency */,
+			);
+			name = "Register formUITests";
+			productName = "Register formUITests";
+			productReference = 84ACC3522B458E1C009325BC /* Register formUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84ACC3302B458E1B009325BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					84ACC3372B458E1B009325BC = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					84ACC3472B458E1C009325BC = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 84ACC3372B458E1B009325BC;
+					};
+					84ACC3512B458E1C009325BC = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 84ACC3372B458E1B009325BC;
+					};
+				};
+			};
+			buildConfigurationList = 84ACC3332B458E1B009325BC /* Build configuration list for PBXProject "Register form" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84ACC32F2B458E1B009325BC;
+			productRefGroup = 84ACC3392B458E1B009325BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84ACC3372B458E1B009325BC /* Register form */,
+				84ACC3472B458E1C009325BC /* Register formTests */,
+				84ACC3512B458E1C009325BC /* Register formUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84ACC3362B458E1B009325BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84ACC3932B45A3DB009325BC /* AdobeClean-BoldIt.ttf in Resources */,
+				84ACC3912B45A3DB009325BC /* AdobeClean-SemiCn.ttf in Resources */,
+				84ACC38D2B45A3DB009325BC /* AdobeClean-BoldSemiCnIt.ttf in Resources */,
+				84ACC39C2B45A3DB009325BC /* AdobeClean-BlackIt.ttf in Resources */,
+				84ACC3982B45A3DB009325BC /* AdobeClean-ExtraBoldIt.ttf in Resources */,
+				84ACC38B2B45A3DB009325BC /* AdobeClean-Black.ttf in Resources */,
+				84ACC39D2B45A3DB009325BC /* AdobeClean-BoldSemiCn.ttf in Resources */,
+				84ACC3972B45A3DB009325BC /* AdobeClean-Light.ttf in Resources */,
+				84ACC3962B45A3DB009325BC /* AdobeClean-SemiLightIt.ttf in Resources */,
+				84ACC3432B458E1C009325BC /* Preview Assets.xcassets in Resources */,
+				84ACC3942B45A3DB009325BC /* AdobeClean-SemiLight.ttf in Resources */,
+				84ACC3402B458E1C009325BC /* Assets.xcassets in Resources */,
+				84ACC39E2B45A3DB009325BC /* AdobeClean-Cond.ttf in Resources */,
+				84ACC3992B45A3DB009325BC /* AdobeClean-It.ttf in Resources */,
+				84ACC39A2B45A3DB009325BC /* AdobeClean-Regular.ttf in Resources */,
+				84ACC38F2B45A3DB009325BC /* AdobeClean-ExtraBold.ttf in Resources */,
+				84ACC3902B45A3DB009325BC /* AdobeClean-CondIt.ttf in Resources */,
+				84ACC38E2B45A3DB009325BC /* AdobeClean-SemiCnIt.ttf in Resources */,
+				84ACC3952B45A3DB009325BC /* AdobeClean-LightIt.ttf in Resources */,
+				84ACC39B2B45A3DB009325BC /* AdobeClean-BoldCondIt.ttf in Resources */,
+				84ACC38C2B45A3DB009325BC /* AdobeClean-BoldCond.ttf in Resources */,
+				84ACC3922B45A3DB009325BC /* AdobeClean-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84ACC3462B458E1C009325BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84ACC3502B458E1C009325BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84ACC3342B458E1B009325BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84ACC36B2B45905A009325BC /* V_Register_NonMemberViewModel.swift in Sources */,
+				84ACC3712B459DDF009325BC /* Color+Ext.swift in Sources */,
+				84ACC3A22B45AA09009325BC /* CheckBox.swift in Sources */,
+				84ACC3672B458E5D009325BC /* V_Register_NonMember.swift in Sources */,
+				84ACC3A42B45ABFD009325BC /* FormSelectField.swift in Sources */,
+				84ACC33E2B458E1B009325BC /* ContentView.swift in Sources */,
+				84ACC33C2B458E1B009325BC /* Register_formApp.swift in Sources */,
+				84ACC36E2B4593D7009325BC /* RegisterFormModel.swift in Sources */,
+				84ACC3692B458E95009325BC /* FormTextField.swift in Sources */,
+				84ACC3732B45A187009325BC /* V_Register_NonMemberHeaderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84ACC3442B458E1C009325BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84ACC34D2B458E1C009325BC /* Register_formTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84ACC34E2B458E1C009325BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84ACC3572B458E1C009325BC /* Register_formUITests.swift in Sources */,
+				84ACC3592B458E1C009325BC /* Register_formUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84ACC34A2B458E1C009325BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84ACC3372B458E1B009325BC /* Register form */;
+			targetProxy = 84ACC3492B458E1C009325BC /* PBXContainerItemProxy */;
+		};
+		84ACC3542B458E1C009325BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84ACC3372B458E1B009325BC /* Register form */;
+			targetProxy = 84ACC3532B458E1C009325BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		84ACC35A2B458E1C009325BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84ACC35B2B458E1C009325BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84ACC35D2B458E1C009325BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Register form/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Register-form-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.upwork.duck.test.Register-form";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84ACC35E2B458E1C009325BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Register form/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Register-form-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.upwork.duck.test.Register-form";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		84ACC3602B458E1C009325BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.upwork.duck.test.Register-formTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Register form.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Register form";
+			};
+			name = Debug;
+		};
+		84ACC3612B458E1C009325BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.upwork.duck.test.Register-formTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Register form.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Register form";
+			};
+			name = Release;
+		};
+		84ACC3632B458E1C009325BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.upwork.duck.test.Register-formUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Register form";
+			};
+			name = Debug;
+		};
+		84ACC3642B458E1C009325BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.upwork.duck.test.Register-formUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Register form";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84ACC3332B458E1B009325BC /* Build configuration list for PBXProject "Register form" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84ACC35A2B458E1C009325BC /* Debug */,
+				84ACC35B2B458E1C009325BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84ACC35C2B458E1C009325BC /* Build configuration list for PBXNativeTarget "Register form" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84ACC35D2B458E1C009325BC /* Debug */,
+				84ACC35E2B458E1C009325BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84ACC35F2B458E1C009325BC /* Build configuration list for PBXNativeTarget "Register formTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84ACC3602B458E1C009325BC /* Debug */,
+				84ACC3612B458E1C009325BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84ACC3622B458E1C009325BC /* Build configuration list for PBXNativeTarget "Register formUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84ACC3632B458E1C009325BC /* Debug */,
+				84ACC3642B458E1C009325BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84ACC3302B458E1B009325BC /* Project object */;
+}
