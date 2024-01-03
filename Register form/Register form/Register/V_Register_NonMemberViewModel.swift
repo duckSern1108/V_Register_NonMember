@@ -16,8 +16,8 @@ class V_Register_NonMemberViewModel: ObservableObject {
     @Published var firstName: String = ""
     @Published var lastName: String = ""
     @Published var birthYear: Date = Date()
-    @Published var gender: Gender = .male
-    @Published var district: String = ""
+    @Published var gender: Gender? = nil
+    @Published var district: String? = ""
     @Published var phoneNumber: String = ""
     @Published var address: String = ""
     @Published var isAcceptConditions: Bool = false
@@ -29,7 +29,7 @@ class V_Register_NonMemberViewModel: ObservableObject {
     private var registerUseCase: V_Register_NonMemberUseCase
     private var subcriptions: Set<AnyCancellable> = .init()
     
-    init(email: String, firstName: String, lastName: String, gender: Gender, district: String, phoneNumber: String, address: String, registerService: V_Register_NonMemberUseCase) {
+    init(email: String, firstName: String, lastName: String, gender: Gender?, district: String?, phoneNumber: String, address: String, registerService: V_Register_NonMemberUseCase) {
         self.email = email
         self.firstName = firstName
         self.lastName = lastName

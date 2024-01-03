@@ -8,10 +8,10 @@
 import Foundation
 
 
-enum Gender {
-    case male
-    case female
-    case other
+enum Gender: String {
+    case male = "Male"
+    case female = "Female"
+    case other = "Other"
 }
 
 struct RegisterFormModel {

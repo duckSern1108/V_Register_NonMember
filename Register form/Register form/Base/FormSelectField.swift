@@ -14,8 +14,7 @@ struct FormSelectField: View {
     var options: [String] = []
     
     @Binding var validStatus: ValidStatus
-    
-    var onSelectField: ((String) -> Void)?
+    @Binding var value: String?
     
     @State private var showListOptions: Bool = false
     
@@ -23,8 +22,7 @@ struct FormSelectField: View {
         VStack(alignment: .leading, spacing: 4) {
             Text("\(title)\(isRequired ? "*" : "")")
             HStack {
-                Rectangle()
-                    .fill(Color.clear)
+                Text((value?.isEmpty ?? true) ? placeholderText : value!)
                 Spacer()
                 Image(systemName: "chevron.down")
             }
@@ -49,7 +47,7 @@ struct FormSelectField: View {
                 ForEach(options, id: \.hashValue) { _opt in
                     Button(action: {
                         showListOptions = false
-                        onSelectField?(_opt)
+                        value = _opt
                     }, label: {
                         Text(_opt)
                             .frame(maxWidth: .infinity, alignment: .leading)
@@ -66,5 +64,5 @@ struct FormSelectField: View {
 }
 
 #Preview {
-    FormSelectField(validStatus: .constant(.none))
+    FormSelectField(validStatus: .constant(.none), value: .constant(""))
 }

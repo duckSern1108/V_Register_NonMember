@@ -61,18 +61,15 @@ struct V_Register_NonMember: View {
                                         isRequired: false,
                                         options: ["Male", "Female", "Other"],
                                         validStatus: .constant(.none),
-                                        onSelectField : {
-                            switch $0 {
-                            case "Male":
-                                viewModel.gender = .male
-                            case "Female":
-                                viewModel.gender = .female
-                            case "Other":
-                                viewModel.gender = .other
-                            default:
-                                break
-                            }
-                        })
+                                        value: Binding(
+                                            get: { viewModel.gender?.rawValue},
+                                            set: {
+                                                if let rawValue = $0 {
+                                                    viewModel.gender = Gender(rawValue: rawValue) ?? .other
+                                                } else {
+                                                    viewModel.gender = nil
+                                                }
+                                            }))
                     }
                     
                     HStack(spacing: 8) {
@@ -81,9 +78,7 @@ struct V_Register_NonMember: View {
                             isRequired: false,
                             options: ["A", "B"],
                             validStatus: .constant(.none),
-                            onSelectField : {
-                                viewModel.district = $0
-                            })
+                            value: $viewModel.district)
                         
                         FormTextField(title: "Mobile Phone",
                                       isRequired: false,

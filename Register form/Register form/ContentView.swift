@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        V_Register_NonMember(viewModel: .init(email: "", firstName: "", lastName: "", gender: .female, district: "", phoneNumber: "", address: "", registerService: MockRegisterUseCase()))
+        V_Register_NonMember(viewModel: .init(email: "", firstName: "", lastName: "", gender: nil, district: "", phoneNumber: "", address: "", registerService: MockRegisterUseCase()))
             
     }
 }
