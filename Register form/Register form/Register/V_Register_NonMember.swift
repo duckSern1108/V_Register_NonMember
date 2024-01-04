@@ -11,6 +11,7 @@ struct V_Register_NonMember: View {
     @ObservedObject var viewModel: V_Register_NonMemberViewModel
     @State var showBottomSheetSuccess: Bool = false
     @Environment(\.verticalSizeClass) var verticalSizeClass
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
     
     init(viewModel: V_Register_NonMemberViewModel) {
         self.viewModel = viewModel
@@ -20,10 +21,14 @@ struct V_Register_NonMember: View {
         VStack {
             V_Register_NonMemberHeaderView()
             ScrollView {
-                if verticalSizeClass == .compact {
-                    V_Register_NonMemberCompactHeightView(viewModel: viewModel, showBottomSheetSuccess: $showBottomSheetSuccess)
+                if horizontalSizeClass == .compact {
+                    if verticalSizeClass == .compact {
+                        V_Register_NonMemberCompactHeightView(viewModel: viewModel, showBottomSheetSuccess: $showBottomSheetSuccess)
+                    } else {
+                        V_Register_NonMemberRegularHeightView(viewModel: viewModel, showBottomSheetSuccess: $showBottomSheetSuccess)
+                    }
                 } else {
-                    V_Register_NonMemberRegularHeightView(viewModel: viewModel, showBottomSheetSuccess: $showBottomSheetSuccess)
+                    V_Register_NonMemberCompactHeightView(viewModel: viewModel, showBottomSheetSuccess: $showBottomSheetSuccess)
                 }
             }
         }
