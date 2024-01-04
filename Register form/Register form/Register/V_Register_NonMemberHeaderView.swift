@@ -22,7 +22,7 @@ struct V_Register_NonMemberHeaderView: View {
             
             Text("REGISTRATION")
                 .foregroundColor(.white)
-                .font(.custom("AdobeClean-Black", size: 20))
+                .adobeCleanFont(size: 20)
                 .frame(maxWidth: .infinity, alignment: .leading)
         }
         .padding([.bottom, .horizontal])
