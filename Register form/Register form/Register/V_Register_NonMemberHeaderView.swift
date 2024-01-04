@@ -26,7 +26,10 @@ struct V_Register_NonMemberHeaderView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
         }
         .padding([.bottom, .horizontal])
-        .background(Color.PRIMARY_COLOR)
+        .background(
+            LinearGradient(gradient: Gradient(colors: [.SECONDARY_COLOR, .PRIMARY_COLOR]),
+                           startPoint: .leading, endPoint: .trailing)
+        )
     }
 }
 
