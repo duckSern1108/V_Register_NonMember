@@ -29,14 +29,7 @@ class V_Register_NonMemberViewModel: ObservableObject {
     private var registerUseCase: V_Register_NonMemberUseCase
     private var subcriptions: Set<AnyCancellable> = .init()
     
-    init(email: String, firstName: String, lastName: String, gender: Gender?, district: String?, phoneNumber: String, address: String, registerService: V_Register_NonMemberUseCase) {
-        self.email = email
-        self.firstName = firstName
-        self.lastName = lastName
-        self.gender = gender
-        self.district = district
-        self.phoneNumber = phoneNumber
-        self.address = address
+    init(registerService: V_Register_NonMemberUseCase) {
         self.registerUseCase = registerService
         
         $email

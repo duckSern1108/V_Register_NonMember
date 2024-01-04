@@ -25,7 +25,7 @@ struct V_Register_NonMemberHeaderView: View {
                 .adobeCleanFont(size: 20)
                 .frame(maxWidth: .infinity, alignment: .leading)
         }
-        .padding([.bottom, .horizontal])
+        .padding()
         .background(
             LinearGradient(gradient: Gradient(colors: [.SECONDARY_COLOR, .PRIMARY_COLOR]),
                            startPoint: .leading, endPoint: .trailing)
