@@ -24,7 +24,7 @@ struct FormSelectField: View {
             HStack {
                 Text((value?.isEmpty ?? true) ? placeholderText : value!)
                 Spacer()
-                Image(systemName: "chevron.down")
+                Text(Image(systemName: "chevron.down"))
             }
             .padding(8)
             .background(Color(hex: 0xEDEDED))
