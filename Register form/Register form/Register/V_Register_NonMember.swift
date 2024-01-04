@@ -15,18 +15,6 @@ struct V_Register_NonMember: View {
         self.viewModel = viewModel
     }
     
-    var acceptText: AttributedString {
-        var result = AttributedString("Accept the")
-        result.foregroundColor = .black
-        return result
-    }
-    
-    var conditionsText: AttributedString {
-        var result = AttributedString(" Conditions")
-        result.foregroundColor = .PRIMARY_COLOR
-        return result
-    }
-    
     var body: some View {
         VStack {
             V_Register_NonMemberHeaderView()
@@ -93,7 +81,7 @@ struct V_Register_NonMember: View {
                     
                     HStack {
                         CheckBoxView(checked: $viewModel.isAcceptConditions)
-                        Text(acceptText + conditionsText)
+                        V_Register_NonMemberAcceptConditionText()
                     }
                     
                     Button {
