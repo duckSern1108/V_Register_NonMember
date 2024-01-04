@@ -29,7 +29,6 @@ struct V_Register_NonMember: View {
         }
         .sheet(isPresented: $showBottomSheetSuccess, content: {
             Text("Send form success")
-                .presentationDetents([.fraction(0.15)])
         })
     }
 }

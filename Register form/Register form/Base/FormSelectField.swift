@@ -58,7 +58,6 @@ struct FormSelectField: View {
                 }
             })
             .listStyle(.plain)
-            .presentationDetents([.fraction(0.3)])
         })
     }
 }
